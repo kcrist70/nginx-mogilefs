@@ -2,6 +2,10 @@
 
 
 vim default.conf
+
+
+
+
 server {
 listen 80;
 server_name yourdomain.name;
