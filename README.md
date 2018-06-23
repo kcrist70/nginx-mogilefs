@@ -30,7 +30,7 @@ vim default.conf
         # It may be configured to be accessable only from local network.
         #
         location /upload/ {
-            allow 192.168.2.0/24;
+            allow 192.168.0.0/24;
             deny all;
 
             mogilefs_tracker 192.168.0.224:7001;
