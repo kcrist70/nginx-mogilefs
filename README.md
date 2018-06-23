@@ -3,8 +3,7 @@
 
 vim default.conf
 
-    
-server {
+    server {
     listen 80;
     server_name yourdomain.name;
     proxy_set_header Host $host;
@@ -19,7 +18,7 @@ server {
         mogilefs_tracker 192.168.0.224:7001;
         mogilefs_domain test;
 
-        mogilefs_pass {
+       mogilefs_pass {
             proxy_pass $mogilefs_path;
             proxy_hide_header Content-Type;
             proxy_buffering off;
@@ -44,4 +43,4 @@ server {
             proxy_buffering off;
         }
     }
-}
+    }
