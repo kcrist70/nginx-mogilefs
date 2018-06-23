@@ -3,15 +3,11 @@
 
 vim default.conf
 
-
-
-
+    
 server {
-listen 80;
-server_name yourdomain.name;
-proxy_set_header Host $host;
-#
-
+    listen 80;
+    server_name yourdomain.name;
+    proxy_set_header Host $host;
     # This location could be used to retrieve files from MogileFS.
     # It is publicly available.
     #
